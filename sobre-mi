@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí - Wilder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4facfe;
+            --secondary: #00f2fe;
+            --dark: #0f3460;
+            --light: #e0e0e0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, var(--dark) 100%);
+            background-attachment: fixed;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80') center/cover no-repeat;
+            opacity: 0.15;
+            z-index: -1;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: rgba(15, 52, 96, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+        }
+        
+        nav a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--light);
+            text-decoration: none;
+            margin: 0 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background: rgba(79, 172, 254, 0.3);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 85%;
+            max-width: 800px;
+            margin: 120px auto 60px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .content-section {
+            text-align: left;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+            margin-top: 1.8rem;
+            border-bottom: 2px solid rgba(79, 172, 254, 0.3);
+            padding-bottom: 5px;
+        }
+        
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--light);
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+            
+            nav a {
+                margin: 0 8px;
+                font-size: 0.9rem;
+                padding: 6px 10px;
+            }
+            
+            .container {
+                padding: 1.8rem;
+                margin: 100px auto 40px;
+                width: 90%;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../../">INICIO</a>
+        <a href="../sobre-mi/">SOBRE MÍ</a>
+        <a href="../habilidades/">HABILIDADES</a>
+        <a href="../proyectos/">PROYECTOS</a>
+        <a href="../contacto/">CONTACTO</a>
+    </nav>
+
+    <div class="container">
+        <div class="content-section">
+            <h1>SOBRE MÍ</h1>
+            
+            <p>Soy Wilder, estudiante de Ingeniería de Sistemas e Informática con especialización en redes y telecomunicaciones. Mi objetivo es combinar conocimientos técnicos con soluciones innovadoras para problemas complejos.</p>
+            
+            <h2>Formación Académica</h2>
+            <ul>
+                <li>Ingeniería de Sistemas e Informática - Universidad Nacional de Ingeniería (En curso)</li>
+                <li>Certificación en Redes Cisco CCNA</li>
+                <li>Especialización en Cloud Computing</li>
+            </ul>
+            
+            <h2>Experiencia Profesional</h2>
+            <p>He trabajado en proyectos de infraestructura de redes y desarrollo de software, colaborando con equipos multidisciplinarios para implementar soluciones tecnológicas eficientes.</p>
+            
+            <h2>Intereses</h2>
+            <p>Me apasiona la arquitectura de redes, la ciberseguridad y el desarrollo de aplicaciones escalables. Fuera del ámbito técnico, disfruto de la fotografía y los deportes al aire libre.</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
