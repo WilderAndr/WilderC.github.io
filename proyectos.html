@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Wilder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4facfe;
+            --secondary: #00f2fe;
+            --dark: #0f3460;
+            --light: #e0e0e0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, var(--dark) 100%);
+            background-attachment: fixed;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80') center/cover no-repeat;
+            opacity: 0.15;
+            z-index: -1;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: rgba(15, 52, 96, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+        }
+        
+        nav a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--light);
+            text-decoration: none;
+            margin: 0 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background: rgba(79, 172, 254, 0.3);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 85%;
+            max-width: 800px;
+            margin: 120px auto 60px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .project-card {
+            background: rgba(15, 52, 96, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(79, 172, 254, 0.2);
+            text-align: left;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary);
+        }
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .project-title {
+            color: var(--primary);
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .tech-tag {
+            background: rgba(79, 172, 254, 0.2);
+            color: var(--primary);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .project-links {
+            margin-top: 15px;
+        }
+        
+        .project-links a {
+            color: var(--light);
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .project-links a:hover {
+            color: var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+            
+            nav a {
+                margin: 0 8px;
+                font-size: 0.9rem;
+                padding: 6px 10px;
+            }
+            
+            .container {
+                padding: 1.8rem;
+                margin: 100px auto 40px;
+                width: 90%;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../../">INICIO</a>
+        <a href="../sobre-mi/">SOBRE MÍ</a>
+        <a href="../habilidades/">HABILIDADES</a>
+        <a href="../proyectos/">PROYECTOS</a>
+        <a href="../contacto/">CONTACTO</a>
+    </nav>
+
+    <div class="container">
+        <h1>MIS PROYECTOS</h1>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title">Sistema de Gestión de Redes</h3>
+                <p>Plataforma web para monitoreo y configuración remota de dispositivos de red en tiempo real.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">SNMP</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i> Código</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3 class="project-title">Aplicación de Telecomunicaciones</h3>
+                <p>Aplicación móvil para análisis de calidad de señal y optimización de redes celulares.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fab fa-google-play"></i> Play Store</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3 class="project-title">Portal Académico</h3>
+                <p>Sistema de gestión de cursos y recursos educativos para la facultad de ingeniería.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Sitio Web</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3 class="project-title">Herramienta de Análisis de Red</h3>
+                <p>Software para análisis de tráfico de red y detección de anomalías.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Wireshark</span>
+                    <span class="tech-tag">PCAP</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i> Código</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
