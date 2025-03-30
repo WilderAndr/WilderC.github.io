@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos - Wilder</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -12,6 +12,7 @@
             --secondary: #00f2fe;
             --dark: #0f3460;
             --light: #e0e0e0;
+            --card-bg: rgba(0, 0, 0, 0.5);
         }
         
         body {
@@ -79,81 +80,74 @@
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             width: 85%;
-            max-width: 800px;
+            max-width: 900px;
             margin: 120px auto 60px;
             backdrop-filter: blur(8px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .project-card {
-            background: rgba(15, 52, 96, 0.3);
+            background: var(--card-bg);
             border-radius: 10px;
             padding: 20px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(79, 172, 254, 0.2);
+            margin-bottom: 25px;
+            border-left: 4px solid var(--primary);
             text-align: left;
         }
         
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            border-color: var(--primary);
-        }
-        
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 2.2rem;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .project-title {
+        .project-card h2 {
             color: var(--primary);
             font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
             margin-top: 0;
             font-size: 1.3rem;
         }
         
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .project-image {
+            width: 100%;
+            border-radius: 8px;
             margin: 15px 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .project-card ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        
+        .project-card li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+            color: var(--light);
+        }
+        
+        .project-card li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
         }
         
         .tech-tag {
+            display: inline-block;
             background: rgba(79, 172, 254, 0.2);
             color: var(--primary);
             padding: 3px 10px;
             border-radius: 20px;
             font-size: 0.8rem;
-        }
-        
-        .project-links {
-            margin-top: 15px;
-        }
-        
-        .project-links a {
-            color: var(--light);
-            text-decoration: none;
-            margin-right: 15px;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
-        }
-        
-        .project-links a:hover {
-            color: var(--primary);
+            margin-right: 8px;
+            margin-bottom: 8px;
         }
         
         @media (max-width: 768px) {
@@ -170,7 +164,7 @@
             }
             
             .container {
-                padding: 1.8rem;
+                padding: 1.5rem;
                 margin: 100px auto 40px;
                 width: 90%;
             }
@@ -178,79 +172,80 @@
             h1 {
                 font-size: 1.8rem;
             }
-            
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="../../">INICIO</a>
-        <a href="../sobre-mi/">SOBRE MÍ</a>
-        <a href="../habilidades/">HABILIDADES</a>
-        <a href="../proyectos/">PROYECTOS</a>
-        <a href="../contacto/">CONTACTO</a>
+        <a href="index.html">INICIO</a>
+        <a href="sobre-mi.html">SOBRE MÍ</a>
+        <a href="habilidades.html">HABILIDADES</a>
+        <a href="proyectos.html">PROYECTOS</a>
+        <a href="contacto.html">CONTACTO</a>
     </nav>
 
     <div class="container">
-        <h1>MIS PROYECTOS</h1>
+        <h1>Mis Proyectos</h1>
         
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3 class="project-title">Sistema de Gestión de Redes</h3>
-                <p>Plataforma web para monitoreo y configuración remota de dispositivos de red en tiempo real.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Django</span>
-                    <span class="tech-tag">SNMP</span>
-                    <span class="tech-tag">Bootstrap</span>
-                </div>
-                <div class="project-links">
-                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
-                    <a href="#" target="_blank"><i class="fab fa-github"></i> Código</a>
-                </div>
-            </div>
+        <div class="project-card">
+            <h2>Sistema de Gestión de Redes y Active Directory</h2>
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Redes y Active Directory" class="project-image">
             
-            <div class="project-card">
-                <h3 class="project-title">Aplicación de Telecomunicaciones</h3>
-                <p>Aplicación móvil para análisis de calidad de señal y optimización de redes celulares.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">React Native</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">MongoDB</span>
-                </div>
-                <div class="project-links">
-                    <a href="#" target="_blank"><i class="fab fa-google-play"></i> Play Store</a>
-                </div>
-            </div>
+            <p>Participé en la implementación de un sistema de gestión para la DIRIN que incluía:</p>
+            <ul>
+                <li>Configuración básica de Active Directory</li>
+                <li>Creación y administración de usuarios en los dominios shadow.peu y buho.peu</li>
+                <li>Apoyo en la implementación del data center</li>
+                <li>Asistencia en la configuración del servidor de archivos</li>
+                <li>Implementación inicial de soluciones cloud</li>
+            </ul>
             
-            <div class="project-card">
-                <h3 class="project-title">Portal Académico</h3>
-                <p>Sistema de gestión de cursos y recursos educativos para la facultad de ingeniería.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">MySQL</span>
-                    <span class="tech-tag">JavaScript</span>
-                </div>
-                <div class="project-links">
-                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Sitio Web</a>
-                </div>
+            <div>
+                <span class="tech-tag">Active Directory</span>
+                <span class="tech-tag">Windows Server</span>
+                <span class="tech-tag">Redes</span>
+                <span class="tech-tag">Cloud</span>
             </div>
+        </div>
+        
+        <div class="project-card">
+            <h2>Cableado Estructurado CAT 6</h2>
+            <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Cableado estructurado" class="project-image">
             
-            <div class="project-card">
-                <h3 class="project-title">Herramienta de Análisis de Red</h3>
-                <p>Software para análisis de tráfico de red y detección de anomalías.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">Java</span>
-                    <span class="tech-tag">Wireshark</span>
-                    <span class="tech-tag">PCAP</span>
-                </div>
-                <div class="project-links">
-                    <a href="#" target="_blank"><i class="fab fa-github"></i> Código</a>
-                </div>
+            <p>Colaboré en proyectos de cableado estructurado donde aprendí sobre:</p>
+            <ul>
+                <li>Normas básicas de instalación de cableado CAT 6</li>
+                <li>Uso de equipos de prueba como el Fluke DSX CableAnalyzer</li>
+                <li>Organización de racks y paneles de parcheo</li>
+                <li>Certificación de cableado según estándares</li>
+            </ul>
+            
+            <div>
+                <span class="tech-tag">Cableado CAT6</span>
+                <span class="tech-tag">Fluke DSX</span>
+                <span class="tech-tag">Redes</span>
+                <span class="tech-tag">Certificación</span>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <h2>Implementación de Data Center</h2>
+            <img src="https://images.unsplash.com/photo-1563770660941-10a63607739e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Data Center" class="project-image">
+            
+            <p>Formé parte del equipo que implementó un data center con:</p>
+            <ul>
+                <li>Configuración inicial de servidores</li>
+                <li>Soporte en la implementación de soluciones cloud básicas</li>
+                <li>Asistencia en la organización del cableado estructurado</li>
+                <li>Monitorización básica de la infraestructura</li>
+            </ul>
+            
+            <div>
+                <span class="tech-tag">Servidores</span>
+                <span class="tech-tag">Infraestructura</span>
+                <span class="tech-tag">Virtualización</span>
+                <span class="tech-tag">Monitorización</span>
             </div>
         </div>
     </div>
