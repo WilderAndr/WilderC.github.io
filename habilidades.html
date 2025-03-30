@@ -95,6 +95,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .skills-grid {
@@ -150,12 +152,15 @@
             margin: 0;
             font-size: 1.5rem;
             font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .skill-title p {
             margin: 5px 0 0;
             color: var(--light);
             font-size: 0.9rem;
+            font-style: italic;
         }
         
         .skill-content ul {
@@ -169,6 +174,7 @@
             padding-left: 30px;
             color: var(--light);
             font-size: 1rem;
+            line-height: 1.5;
         }
         
         .skill-content li:before {
@@ -189,6 +195,7 @@
             margin-left: 8px;
             vertical-align: middle;
             font-weight: 600;
+            text-transform: uppercase;
         }
         
         @media (max-width: 768px) {
@@ -243,7 +250,7 @@
     </nav>
 
     <div class="container">
-        <h1>HABILIDADES Y CERTIFICACIONES</h1>
+        <h1>Habilidades y Certificaciones</h1>
         
         <div class="skills-grid">
             <!-- Diseño de Malware -->
@@ -257,11 +264,10 @@
                 </div>
                 <div class="skill-content">
                     <ul>
-                        <li>PROGRAMA DE ESPECIALIZACIÓN EN DISEÑO DE MALWARE</li>
+                        <li>Programa de Especialización en Diseño de Malware</li>
                         <li>Análisis de malware avanzado</li>
-                        <li>Técnicas de evasión</li>
-                        <li>Ingeniería inversa</li>
-                        <li>Técnicas de ofuscación</li>
+                        <li>Técnicas de evasión y ofuscación</li>
+                        <li>Ingeniería inversa aplicada</li>
                     </ul>
                 </div>
             </div>
@@ -272,15 +278,15 @@
                     <img src="imagenes/si.png" alt="Seguridad de la Información" class="skill-icon">
                     <div class="skill-title">
                         <h3>Seguridad de la Información</h3>
-                        <p>Gestión y protección de datos</p>
+                        <p>Gestión y protección de datos corporativos</p>
                     </div>
                 </div>
                 <div class="skill-content">
                     <ul>
-                        <li>ESPECIALIZACIÓN EN SISTEMA DE GESTIÓN DE SEGURIDAD DE LA INFORMACIÓN ISO 27001</li>
-                        <li>IMPLEMENTADOR LÍDER ISO 27001 <span class="cert-badge">Avanzado</span></li>
+                        <li>Especialización en Sistema de Gestión de Seguridad de la Información ISO 27001</li>
+                        <li>Implementador Líder ISO 27001</li>
                         <li>Desarrollo de políticas de seguridad</li>
-                        <li>Auditorías de seguridad</li>
+                        <li>Auditorías de seguridad informática</li>
                         <li>Gestión de riesgos</li>
                     </ul>
                 </div>
@@ -297,11 +303,11 @@
                 </div>
                 <div class="skill-content">
                     <ul>
-                        <li>ESPECIALIZACIÓN EN ADMINISTRACIÓN DE REDES I y II</li>
-                        <li>IT Essentials: Hardware y redes <span class="cert-badge">Cisco</span></li>
-                        <li>Configuración de routers y switches</li>
-                        <li>Protocolos TCP/IP, DNS, DHCP</li>
-                        <li>ESPECIALIZACIÓN EN MONITOREO DE REDES</li>
+                        <li>Especialización en Administración de Redes I y II</li>
+                        <li>IT Essentials: Hardware y redes</li>
+                        <li>Configuración avanzada de routers y switches</li>
+                        <li>Protocolos de red (TCP/IP, DNS, DHCP, VPN)</li>
+                        <li>Especialización en Monitoreo de Redes</li>
                     </ul>
                 </div>
             </div>
@@ -312,16 +318,15 @@
                     <img src="imagenes/ad.png" alt="Active Directory" class="skill-icon">
                     <div class="skill-title">
                         <h3>Active Directory</h3>
-                        <p>Gestión de identidades y accesos</p>
+                        <p>Gestión de identidades y control de accesos</p>
                     </div>
                 </div>
                 <div class="skill-content">
                     <ul>
-                        <li>ESPECIALIZACIÓN EN ACTIVE DIRECTORY (WINDOWS + LINUX)</li>
-                        <li>Gestión de usuarios y grupos</li>
-                        <li>Políticas de grupo (GPO)</li>
-                        <li>Autenticación y autorización</li>
-                        <li>Integración con Linux</li>
+                        <li>Especialización en Active Directory (Windows + Linux)</li>
+                        <li>Gestión de usuarios, grupos y políticas</li>
+                        <li>Implementación de GPO (Group Policy Objects)</li>
+                        <li>Autenticación y autorización avanzada</li> 
                     </ul>
                 </div>
             </div>
@@ -332,15 +337,16 @@
                     <img src="imagenes/ci.jpg" alt="Cisco" class="skill-icon">
                     <div class="skill-title">
                         <h3>Cisco Networking</h3>
-                        <p>Certificaciones y conocimientos</p>
+                        <p>Certificaciones y conocimientos en redes</p>
                     </div>
                 </div>
                 <div class="skill-content">
                     <ul>
-                        <li>IT Essentials: Hardware y redes <span class="cert-badge">Certificado</span></li>
+                        <li>IT Essentials: Hardware y redes</li>
                         <li>Fundamentos de redes Cisco</li>
-                        <li>Conmutación y enrutamiento</li>
-                        <li>Seguridad básica en redes</li>
+                        <li>Conmutación y enrutamiento básico</li>
+                        <li>Seguridad en redes corporativas</li>
+                        <li>Resolución de problemas de conectividad</li>
                     </ul>
                 </div>
             </div>
@@ -350,17 +356,17 @@
                 <div class="skill-header">
                     <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--primary); margin-right: 20px; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 3px solid var(--primary); background: rgba(0,0,0,0.3);"></i>
                     <div class="skill-title">
-                        <h3>Ciberseguridad Avanzada</h3>
+                        <h3>Ciberseguridad</h3>
                         <p>Protección contra amenazas digitales</p>
                     </div>
                 </div>
                 <div class="skill-content">
                     <ul>
-                        <li>TÉCNICO EN CIBERSEGURIDAD <span class="cert-badge">Certificado</span></li>
-                        <li>SEGURIDAD DIGITAL Y HERRAMIENTAS TECNOLÓGICAS</li>
-                        <li>ESPECIALIZACIÓN EN PENETRATION TESTER</li>
-                        <li>ESPECIALIZACIÓN EN INGENIERÍA SOCIAL PSICOLÓGICA</li>
-                        <li>Análisis de vulnerabilidades</li>
+                        <li>Técnico en Ciberseguridad </li>
+                        <li>Seguridad Digital y Herramientas Tecnológicas</li>
+                        <li>Especialización en Penetration Testing</li>
+                        <li>Especialización en Ingeniería Social Psicológica</li>
+                        <li>Análisis y remediación de vulnerabilidades</li>
                     </ul>
                 </div>
             </div>
