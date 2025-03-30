@@ -7,83 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --primary: #4facfe;
-            --secondary: #00f2fe;
-            --dark: #0f3460;
-            --light: #e0e0e0;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, var(--dark) 100%);
-            background-attachment: fixed;
-            position: relative;
-            overflow-x: hidden;
-        }
-        
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80') center/cover no-repeat;
-            opacity: 0.15;
-            z-index: -1;
-        }
-        
-        nav {
-            position: fixed;
-            top: 0;
-            right: 0;
-            background: rgba(15, 52, 96, 0.8);
-            backdrop-filter: blur(10px);
-            padding: 15px 20px;
-            z-index: 1000;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
-        }
-        
-        nav a {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--light);
-            text-decoration: none;
-            margin: 0 15px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            padding: 8px 15px;
-            border-radius: 20px;
-            transition: all 0.3s ease;
-        }
-        
-        nav a:hover {
-            background: rgba(79, 172, 254, 0.3);
-            color: #fff;
-            transform: translateY(-2px);
-        }
-        
-        .container {
-            text-align: center;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            width: 85%;
-            max-width: 600px;
-            margin: 120px auto 60px;
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+        /* Copiar todos los estilos del index.html */
         
         .contact-info {
             text-align: left;
@@ -104,25 +28,9 @@
             text-align: center;
         }
         
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 2.2rem;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .contact-text {
-            flex: 1;
-        }
-        
         .contact-text h3 {
             margin: 0;
             color: var(--primary);
-            font-family: 'Montserrat', sans-serif;
         }
         
         .contact-text a {
@@ -181,40 +89,16 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
-        
-        @media (max-width: 768px) {
-            nav {
-                width: 100%;
-                text-align: center;
-                padding: 10px 0;
-            }
-            
-            nav a {
-                margin: 0 8px;
-                font-size: 0.9rem;
-                padding: 6px 10px;
-            }
-            
-            .container {
-                padding: 1.8rem;
-                margin: 100px auto 40px;
-                width: 90%;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-        }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="../../">INICIO</a>
-        <a href="../sobre-mi/">SOBRE MÍ</a>
-        <a href="../habilidades/">HABILIDADES</a>
-        <a href="../proyectos/">PROYECTOS</a>
-        <a href="../contacto/">CONTACTO</a>
+        <a href="index.html">INICIO</a>
+        <a href="sobre-mi.html">SOBRE MÍ</a>
+        <a href="habilidades.html">HABILIDADES</a>
+        <a href="proyectos.html">PROYECTOS</a>
+        <a href="contacto.html">CONTACTO</a>
     </nav>
 
     <div class="container">
@@ -227,7 +111,7 @@
                 </div>
                 <div class="contact-text">
                     <h3>Email</h3>
-                    <a href="mailto:tu@email.com">tu@email.com</a>
+                    <a href="mailto:tu@email.com">48569015@continental.edu.pe</a>
                 </div>
             </div>
             
@@ -237,7 +121,7 @@
                 </div>
                 <div class="contact-text">
                     <h3>GitHub</h3>
-                    <a href="https://github.com/PortafolioP" target="_blank">github.com/PortafolioP</a>
+                    <a href="https://github.com/WilderAndr" target="_blank">github.com/WilderAndr</a>
                 </div>
             </div>
             
@@ -247,7 +131,7 @@
                 </div>
                 <div class="contact-text">
                     <h3>LinkedIn</h3>
-                    <a href="#" target="_blank">linkedin.com/in/tuperfil</a>
+                    <a href="https://www.linkedin.com/in/wilder-andres-arredondo-sarmiento-1a4640253/?originalSubdomain=pe" target="_blank">linkedin.com/in/wilder-arredondo</a>
                 </div>
             </div>
             
@@ -257,7 +141,7 @@
                 </div>
                 <div class="contact-text">
                     <h3>Teléfono</h3>
-                    <a href="tel:+51987654321">+51 987 654 321</a>
+                    <a href="tel:+51983122769">+51 983 122 769</a>
                 </div>
             </div>
         </div>
